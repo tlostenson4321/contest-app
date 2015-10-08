@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="videoApp">
+<head>
+	<title>Best Rage Quit</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body ng-controller="rageTroller">
+<header> You think you have what it takes to make everyone laugh at the amazing anger?</header>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="videos.html">Videos Already Sent In</a></li>
+	</ul>
+</nav>
+
+	<h1>{{greeting}}</h1>
+
+
+<form>
+	<label> Your Name</label>
+		<input name = "name">
+	<label> Enter the URL here</label>
+		<input name = "URL">
+	<label> What is the title of the video?</label>
+		<input name = "Title">
+	<label> Please describe the video</label>
+		<input name = "Description">
+	<input type = "submit">
+</form>
+
+
+<script src="/javascripts/main.js"></script>
+</body>
+</html>
