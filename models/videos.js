@@ -1,16 +1,17 @@
 var allPosts = []
 
-var VideoPost = function(name, url, title, desc.){
+var VideoPost = function(postData){
 
-	this.name = name
-	this.url = url
-	this.title = title
-	this.desc = desc
+	this.name = postData.name
+	this.url = postData.url
+	this.title = postData.title
+	this.desc = postData.desc
 	allPosts.push(this)
 }
 
 module.exports = {
 
-	allPosts : allPosts
+	allPosts : allPosts,
 	VideoPost : VideoPost
 }
+

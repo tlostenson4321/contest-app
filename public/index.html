@@ -18,15 +18,15 @@
 	<h1>{{greeting}}</h1>
 
 
-<form>
+<form ng-submit="createPost()">
 	<label> Your Name</label>
-		<input name = "name">
+		<input ng-model="newPost.name">
 	<label> Enter the URL here</label>
-		<input name = "URL">
+		<input ng-model="newPost.url">
 	<label> What is the title of the video?</label>
-		<input name = "Title">
+		<input ng-model="newPost.title">
 	<label> Please describe the video</label>
-		<input name = "Description">
+		<input ng-model="newPost.desc">
 	<input type = "submit">
 </form>
 
