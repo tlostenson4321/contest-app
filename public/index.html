@@ -3,9 +3,10 @@
 <head>
 	<title>Best Rage Quit</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
-<body ng-controller="rageTroller">
+<body ng-controller="rageTroller" class="container">
 <header> You think you have what it takes to make everyone laugh at the amazing anger?</header>
 
 <nav>
@@ -19,13 +20,13 @@
 
 
 <form ng-submit="createPost()">
-	<label> Your Name</label>
+	<label class="input-label"> Your Name</label>
 		<input ng-model="newPost.name">
-	<label> Enter the URL here</label>
+	<label class="input-label"> Enter the URL here</label>
 		<input ng-model="newPost.url">
-	<label> What is the title of the video?</label>
+	<label class="input-label"> What is the title of the video?</label>
 		<input ng-model="newPost.title">
-	<label> Please describe the video</label>
+	<label class="input-label"> Please describe the video</label>
 		<input ng-model="newPost.desc">
 	<input type = "submit">
 </form>

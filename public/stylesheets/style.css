@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+.input-label{
+	font-size: 1.2rem
+}
