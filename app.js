@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
   res.sendFile('index.html', {root : './public'})
 });
+app.post('/videosubmit', videoController.createPost)
 
 // Creating Server and Listening for Connections \\
 var port = 3000
